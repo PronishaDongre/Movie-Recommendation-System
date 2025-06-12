@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CssForLogin.css">
+</head>
+<body>
+    <div class="content">
+        <form action="/checklogin" method="POST">
+            <div class="inputCtrl" style="margin-top: 50px;">
+                <label>Username:</label>
+                <input type="text" name="uname">
+            </div>
+            <div class="inputCtrl">
+                <label>Password:</label>
+                <input type="text" name="upass">
+            </div>
+            <div class="reg">
+                <p>didn't have any account?</p>
+                <a href="/register">Go to Registration </a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+        <% if (typeof msg !== 'undefined') { %>
+
+
+        <p><%=msg %></p>
+       
+    <% } %>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CssForRegister.css">
+</head>
+<body>
+    <div class="content">
+        <form action="/saveReg" method="POST">
+            <div class="inputCtrl">
+                <label>Username:</label>
+                <input type="text" name="uname">
+            </div>
+            <div class="inputCtrl">
+                <label>Password:</label>
+                <input type="text" name="upass">
+            </div>
+            <div class="inputCtrl">
+                <label>Email:</label>
+                <input type="text" name="uemail">
+            </div>
+            <div class="inputCtrl">
+                <label>Contact:</label>
+                <input type="text" name="ucontact">
+            </div>
+            <div class="inputCtrl">
+                <label>City:</label>
+                <input type="text" name="ucity">
+            </div>
+            <input type="submit" value="Register">
+        </form>
+        <% if (typeof message !== 'undefined') { %>
+
+
+        <p><%=message %></p>
+       
+    <% } %>
+    </div>
+   
+</body>
+</html>
