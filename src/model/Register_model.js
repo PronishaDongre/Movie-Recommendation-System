@@ -53,4 +53,4 @@ let checkLoginModel=(uname,upass)=>{
 };
 
 
-module.exports = { saveRegisterInfo,checkLoginModel };
+module.exports = {saveRegisterInfo,checkLoginModel };
