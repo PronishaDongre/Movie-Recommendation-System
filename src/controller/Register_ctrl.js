@@ -1,4 +1,4 @@
-const { saveRegisterInfo,checkLoginModel } = require("../model/Register_model");
+const {saveRegisterInfo,checkLoginModel } = require("../model/Register_model");
 exports.getRegisterPage = (req, res) => {
     res.render("Register.ejs",{message:""});
 };
